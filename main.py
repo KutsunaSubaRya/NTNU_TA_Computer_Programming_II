@@ -1,17 +1,25 @@
 import json
 from date_parse import parseGitLogDateToTargetString as pS
+from date_parse import parseMonth as pM
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-
+class monthlyContribution:
+    def __init__(self, author, commit, fileChanged, insertions, deletions):
+        self.author = author
+        self.commit = commit
+        self.fileChanged = fileChanged
+        self.insertions = insertions
+        self.deletions = deletions
+    def addContributeItem(self, commit, fileChanged, insertions, deletions):
+        self.commit += commit
+        self.fileChanged += fileChanged
+        self.insertions += insertions
+        self.deletions += deletions
+    def printMember(self):
+        print("- ", self.author)
+        print("    - ", self.commit, "commits")
+        print("    - ", self.fileChanged, "file changed")
+        print("    - ", self.insertions, "insertions")
+        print("    - ", self.deletions, "deletions")
 with open('jsonLog.json') as f:
     data = json.load(f)
 
@@ -21,7 +29,8 @@ def findAllAuthorList():
         if i["author"] not in authorList:
             authorList.append(i["author"])
     authorList.sort()
-    print(authorList)
+    # print(authorList)
+    return authorList
 
 def checkExistandDuplicate(val):
     num = int(0)
@@ -49,7 +58,7 @@ def searchCommitInformationByHashVal(val):
         return
     try:
         # trigger merge operate cannot found stats -- only for TA testing, not for HW0205 judging
-        fullState["stats"] 
+        # fullState["stats"]
         # ---------------------------------------------------------------------------------------
         fullState = next(item for item in data["frontend-git-log-file"] if val == item["commit"][0:8])
         print("(" + val + ")")
@@ -62,12 +71,34 @@ def searchCommitInformationByHashVal(val):
         print()
     except:
         print()
-        print(bcolors.WARNING + "--- Hey !!!---")
-        print(bcolors.WARNING + "(" + val + ")")
-        print(bcolors.WARNING + "This is merge operate OwO. Not found stats")
+        print("--- Hey !!!---")
+        print("(" + val + ")")
+        print("This is merge operate OwO. Not found stats")
         print("--------------")
         print()
         pass
+
+def searchMonthlyContribution(month, authorList):
+    memberList = []
+    for i in authorList:
+        memberList.append(monthlyContribution(i,0,0,0,0)) 
+    # print(memberList)
+    for i in data["frontend-git-log-file"]:
+        if pM(i["date"]) == month:
+            for member in memberList:
+                if i["author"] == member.author:
+                    print("i[author]= ", i["author"])
+                    print("member.author = ", member.author)
+                    try:
+                        i["stats"]
+                        member.addContributeItem(int(1), 
+                                                i["stats"]["files_changed"], 
+                                                i["stats"]["insertions"],
+                                                i["stats"]["deletions"])
+                    except:
+                        pass
+    for i in memberList:
+        i.printMember()
 if __name__ == "__main__":
-    findAllAuthorList()
-    searchCommitInformationByHashVal("6e5b87ed")
+    searchCommitInformationByHashVal("b133cda7")
+    searchMonthlyContribution("Sep", findAllAuthorList())

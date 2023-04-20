@@ -11,11 +11,20 @@ dayDict = {"1": "01", "2": "02",
             "3": "03", "4": "04", 
             "5": "05", "6": "06", 
             "7": "07", "8": "08", 
-            "9": "09", "10": "10"}
+            "9": "09"}
 
 def parseGitLogDateToTargetString(gitLogDate: str):
     tokens = gitLogDate.split()
     ret = ""
-    ret += tokens[4]+"/"+ monthDict[tokens[1]] + "/" + dayDict[tokens[2]] + "/" + tokens[3]
+    date = ""
+    if len(tokens[2])<2:
+        date = dayDict[tokens[2]]
+    else:
+        date = tokens[2]
+    ret += tokens[4]+"/"+ monthDict[tokens[1]] + "/" + date + "/" + tokens[3]
     # print("Date you query: ", ret)
     return ret
+
+def parseMonth(gitLogDate: str):
+    tokens = gitLogDate.split()
+    return tokens[1]
