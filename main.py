@@ -15,11 +15,11 @@ class monthlyContribution:
         self.insertions += insertions
         self.deletions += deletions
     def printMember(self):
-        print("- ", self.author)
-        print("    - ", self.commit, "commits")
-        print("    - ", self.fileChanged, "file changed")
-        print("    - ", self.insertions, "insertions")
-        print("    - ", self.deletions, "deletions")
+        print("- " + self.author)
+        print("    - " + str(self.commit) + " commits")
+        print("    - " + str(self.fileChanged) + " file changed")
+        print("    - " + str(self.insertions) + " insertions")
+        print("    - " + str(self.deletions) + " deletions")
 with open('jsonLog.json') as f:
     data = json.load(f)
 
@@ -29,7 +29,6 @@ def findAllAuthorList():
         if i["author"] not in authorList:
             authorList.append(i["author"])
     authorList.sort()
-    # print(authorList)
     return authorList
 
 def checkExistandDuplicate(val):
@@ -52,9 +51,11 @@ def searchCommitInformationByHashVal(val):
     deter = checkExistandDuplicate(val)
     if deter == 0:
         print("("+val+") Not found")
+        print()
         return
     elif deter == 2:
         print("("+val+") More than two search results")
+        print()
         return
     try:
         # trigger merge operate cannot found stats -- only for TA testing, not for HW0205 judging
@@ -62,20 +63,22 @@ def searchCommitInformationByHashVal(val):
         # ---------------------------------------------------------------------------------------
         fullState = next(item for item in data["frontend-git-log-file"] if val == item["commit"][0:8])
         print("(" + val + ")")
-        print("- ", fullState["author"])
-        print("    - ", fullState["author_email"])
-        print("    - ", pS(fullState["date"]))
-        print("    - ", fullState["stats"]["files_changed"], "file changed")
-        print("    - ", fullState["stats"]["insertions"], "insertions")
-        print("    - ", fullState["stats"]["deletions"], "deletions")
+        print("- " + fullState["author"])
+        print("    - " + fullState["author_email"])
+        print("    - " + pS(fullState["date"]))
+        print("    - " + str(fullState["stats"]["files_changed"]) + " file changed")
+        print("    - " + str(fullState["stats"]["insertions"]) + " insertions")
+        print("    - " + str(fullState["stats"]["deletions"]) + " deletions")
         print()
     except:
-        print()
-        print("--- Hey !!!---")
-        print("(" + val + ")")
-        print("This is merge operate OwO. Not found stats")
-        print("--------------")
-        print()
+        # trigger merge operate cannot found stats -- only for TA testing, not for HW0205 judging
+        # print()
+        # print("--- Hey !!!---")
+        # print("(" + val + ")")
+        # print("This is merge operate OwO. Not found stats")
+        # print("--------------")
+        # print()
+        # ---------------------------------------------------------------------------------------
         pass
 
 def searchMonthlyContribution(month, authorList):
@@ -87,18 +90,27 @@ def searchMonthlyContribution(month, authorList):
         if pM(i["date"]) == month:
             for member in memberList:
                 if i["author"] == member.author:
-                    print("i[author]= ", i["author"])
-                    print("member.author = ", member.author)
-                    try:
+                    try: # not merge commit
                         i["stats"]
                         member.addContributeItem(int(1), 
                                                 i["stats"]["files_changed"], 
                                                 i["stats"]["insertions"],
                                                 i["stats"]["deletions"])
-                    except:
+                    except: # merge commit
+                        member.addContributeItem(int(1),0,0,0)
                         pass
+    print("(" + month+ ")")
     for i in memberList:
         i.printMember()
+    print()
 if __name__ == "__main__":
-    searchCommitInformationByHashVal("b133cda7")
-    searchMonthlyContribution("Sep", findAllAuthorList())
+    searchCommitInformationByHashVal("1cdbc6ec")
+    searchCommitInformationByHashVal("20421a42")
+    searchCommitInformationByHashVal("1a712217")
+    searchCommitInformationByHashVal("5f579554")
+    searchCommitInformationByHashVal("cfe22e1c")
+    searchCommitInformationByHashVal("5bc1f331")
+    AuthorList = findAllAuthorList()
+    searchMonthlyContribution("Oct", AuthorList)
+    searchMonthlyContribution("Nov", AuthorList)
+    searchMonthlyContribution("Dec", AuthorList)
