@@ -1,4 +1,5 @@
 import json
+import sys
 from date_parse import parseGitLogDateToTargetString as pS
 from date_parse import parseMonth as pM
 
@@ -104,13 +105,17 @@ def searchMonthlyContribution(month, authorList):
         i.printMember()
     print()
 if __name__ == "__main__":
-    searchCommitInformationByHashVal("1cdbc6ec")
-    searchCommitInformationByHashVal("20421a42")
-    searchCommitInformationByHashVal("1a712217")
-    searchCommitInformationByHashVal("5f579554")
-    searchCommitInformationByHashVal("cfe22e1c")
-    searchCommitInformationByHashVal("5bc1f331")
-    AuthorList = findAllAuthorList()
-    searchMonthlyContribution("Oct", AuthorList)
-    searchMonthlyContribution("Nov", AuthorList)
-    searchMonthlyContribution("Dec", AuthorList)
+    original_stdout = sys.stdout
+    with open('contribution.txt', 'w') as f:
+        sys.stdout = f
+        searchCommitInformationByHashVal("1cdbc6ec")
+        searchCommitInformationByHashVal("20421a42")
+        searchCommitInformationByHashVal("1a712217")
+        searchCommitInformationByHashVal("5f579554")
+        searchCommitInformationByHashVal("cfe22e1c")
+        searchCommitInformationByHashVal("5bc1f331")
+        AuthorList = findAllAuthorList()
+        searchMonthlyContribution("Oct", AuthorList)
+        searchMonthlyContribution("Nov", AuthorList)
+        searchMonthlyContribution("Dec", AuthorList)
+        sys.stdout = original_stdout

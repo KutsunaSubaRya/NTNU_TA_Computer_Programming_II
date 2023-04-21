@@ -1,0 +1,302 @@
+(1cdbc6ec)
+- PTLee70
+    - 40847057s@gapps.ntnu.edu.tw
+    - 2022/11/07/15:24:16
+    - 11555 file changed
+    - 3686642 insertions
+    - 0 deletions
+
+(20421a42)
+- KutsunaSubaRya
+    - index20010928@gmail.com
+    - 2022/10/03/10:41:05
+    - 30 file changed
+    - 3149 insertions
+    - 88 deletions
+
+(1a712217) Not found
+
+(5f579554)
+- flyingdollar.cheng
+    - flyingdollar.cheng@gmail.com
+    - 2022/12/21/08:34:33
+    - 31 file changed
+    - 1912 insertions
+    - 1879 deletions
+
+(cfe22e1c)
+- Birkhoff Lee
+    - admin@birkhoff.me
+    - 2022/12/10/00:14:59
+    - 111 file changed
+    - 3199 insertions
+    - 4510 deletions
+
+(5bc1f331)
+- kabo chang
+    - brian891125@gmail.com
+    - 2022/12/15/00:58:24
+    - 24 file changed
+    - 1106 insertions
+    - 639 deletions
+
+(Oct)
+- 40947010S
+    - 1 commits
+    - 3 file changed
+    - 34 insertions
+    - 12 deletions
+- Birkhoff Lee
+    - 54 commits
+    - 203 file changed
+    - 3230 insertions
+    - 1076 deletions
+- Howard Guo
+    - 16 commits
+    - 25 file changed
+    - 3134 insertions
+    - 4995 deletions
+- HsuJinho
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- KutsunaSubaRya
+    - 90 commits
+    - 108 file changed
+    - 6157 insertions
+    - 2075 deletions
+- PTLee70
+    - 64 commits
+    - 167 file changed
+    - 5593 insertions
+    - 1188 deletions
+- Renee Lee
+    - 1 commits
+    - 3 file changed
+    - 238 insertions
+    - 26 deletions
+- Renee0727
+    - 2 commits
+    - 14 file changed
+    - 336 insertions
+    - 18 deletions
+- SubaRya
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- Wilbur Kwan
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- flyingdollar.cheng
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- kabo chang
+    - 6 commits
+    - 84 file changed
+    - 8330 insertions
+    - 1956 deletions
+- kabo87777
+    - 1 commits
+    - 5 file changed
+    - 55 insertions
+    - 5 deletions
+- toto6038
+    - 6 commits
+    - 25 file changed
+    - 650 insertions
+    - 112 deletions
+- 徐政皓
+    - 2 commits
+    - 6 file changed
+    - 166 insertions
+    - 12 deletions
+- 沅廷 謝
+    - 2 commits
+    - 13 file changed
+    - 3427 insertions
+    - 1027 deletions
+- 翔元
+    - 1 commits
+    - 23 file changed
+    - 3058 insertions
+    - 2359 deletions
+
+(Nov)
+- 40947010S
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- Birkhoff Lee
+    - 18 commits
+    - 23 file changed
+    - 183 insertions
+    - 94 deletions
+- Howard Guo
+    - 43 commits
+    - 52 file changed
+    - 1312 insertions
+    - 513 deletions
+- HsuJinho
+    - 4 commits
+    - 4 file changed
+    - 374 insertions
+    - 1 deletions
+- KutsunaSubaRya
+    - 39 commits
+    - 44 file changed
+    - 3432 insertions
+    - 1191 deletions
+- PTLee70
+    - 94 commits
+    - 35027 file changed
+    - 11073342 insertions
+    - 5203 deletions
+- Renee Lee
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- Renee0727
+    - 2 commits
+    - 15 file changed
+    - 984 insertions
+    - 146 deletions
+- SubaRya
+    - 7 commits
+    - 43 file changed
+    - 1462 insertions
+    - 512 deletions
+- Wilbur Kwan
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- flyingdollar.cheng
+    - 4 commits
+    - 43 file changed
+    - 3198 insertions
+    - 1074 deletions
+- kabo chang
+    - 12 commits
+    - 70 file changed
+    - 6402 insertions
+    - 3011 deletions
+- kabo87777
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- toto6038
+    - 2 commits
+    - 14 file changed
+    - 851 insertions
+    - 220 deletions
+- 徐政皓
+    - 1 commits
+    - 14 file changed
+    - 377 insertions
+    - 93 deletions
+- 沅廷 謝
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- 翔元
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+
+(Dec)
+- 40947010S
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- Birkhoff Lee
+    - 30 commits
+    - 201 file changed
+    - 4616 insertions
+    - 5763 deletions
+- Howard Guo
+    - 8 commits
+    - 17 file changed
+    - 449 insertions
+    - 406 deletions
+- HsuJinho
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- KutsunaSubaRya
+    - 97 commits
+    - 213 file changed
+    - 13579 insertions
+    - 7016 deletions
+- PTLee70
+    - 84 commits
+    - 311 file changed
+    - 13503 insertions
+    - 7567 deletions
+- Renee Lee
+    - 2 commits
+    - 11 file changed
+    - 97 insertions
+    - 51 deletions
+- Renee0727
+    - 2 commits
+    - 15 file changed
+    - 939 insertions
+    - 279 deletions
+- SubaRya
+    - 16 commits
+    - 107 file changed
+    - 1207 insertions
+    - 689 deletions
+- Wilbur Kwan
+    - 5 commits
+    - 20 file changed
+    - 562 insertions
+    - 594 deletions
+- flyingdollar.cheng
+    - 18 commits
+    - 222 file changed
+    - 12374 insertions
+    - 13992 deletions
+- kabo chang
+    - 9 commits
+    - 93 file changed
+    - 4677 insertions
+    - 2876 deletions
+- kabo87777
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
+- toto6038
+    - 12 commits
+    - 48 file changed
+    - 3166 insertions
+    - 3353 deletions
+- 徐政皓
+    - 1 commits
+    - 2 file changed
+    - 370 insertions
+    - 68 deletions
+- 沅廷 謝
+    - 5 commits
+    - 32 file changed
+    - 1488 insertions
+    - 1084 deletions
+- 翔元
+    - 0 commits
+    - 0 file changed
+    - 0 insertions
+    - 0 deletions
