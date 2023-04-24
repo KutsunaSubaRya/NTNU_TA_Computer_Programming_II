@@ -3,8 +3,8 @@
     - 40847057s@gapps.ntnu.edu.tw
     - 2022/11/07/15:24:16
     - 11555 file changed
-    - 3686642 insertions
-    - 0 deletions
+    - 0 insertions
+    - 3686642 deletions
 
 (20421a42)
 - KutsunaSubaRya
@@ -64,8 +64,8 @@
 - KutsunaSubaRya
     - 90 commits
     - 108 file changed
-    - 6157 insertions
-    - 2075 deletions
+    - 6149 insertions
+    - 2083 deletions
 - PTLee70
     - 64 commits
     - 167 file changed
@@ -136,8 +136,8 @@
 - Birkhoff Lee
     - 18 commits
     - 23 file changed
-    - 183 insertions
-    - 94 deletions
+    - 163 insertions
+    - 114 deletions
 - Howard Guo
     - 43 commits
     - 52 file changed
@@ -151,13 +151,13 @@
 - KutsunaSubaRya
     - 39 commits
     - 44 file changed
-    - 3432 insertions
-    - 1191 deletions
+    - 3411 insertions
+    - 1212 deletions
 - PTLee70
     - 94 commits
     - 35027 file changed
-    - 11073342 insertions
-    - 5203 deletions
+    - 3699962 insertions
+    - 7378583 deletions
 - Renee Lee
     - 0 commits
     - 0 file changed
@@ -171,8 +171,8 @@
 - SubaRya
     - 7 commits
     - 43 file changed
-    - 1462 insertions
-    - 512 deletions
+    - 1443 insertions
+    - 531 deletions
 - Wilbur Kwan
     - 0 commits
     - 0 file changed
@@ -223,8 +223,8 @@
 - Birkhoff Lee
     - 30 commits
     - 201 file changed
-    - 4616 insertions
-    - 5763 deletions
+    - 4612 insertions
+    - 5767 deletions
 - Howard Guo
     - 8 commits
     - 17 file changed
@@ -238,13 +238,13 @@
 - KutsunaSubaRya
     - 97 commits
     - 213 file changed
-    - 13579 insertions
-    - 7016 deletions
+    - 13578 insertions
+    - 7017 deletions
 - PTLee70
     - 84 commits
     - 311 file changed
-    - 13503 insertions
-    - 7567 deletions
+    - 13419 insertions
+    - 7651 deletions
 - Renee Lee
     - 2 commits
     - 11 file changed
@@ -300,3 +300,4 @@
     - 0 file changed
     - 0 insertions
     - 0 deletions
+
