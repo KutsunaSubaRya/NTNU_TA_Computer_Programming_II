@@ -1,5 +1,12 @@
 # 111-2 NTNU_TA_Computer_Programming_II
 
+嗨 ! 我是這學期臺師大程式設計(二)的助教 蘇子權 (SubaRya)
+
+這是我們的 [課程網站](https://sites.google.com/gapps.ntnu.edu.tw/neokent/teaching/2023spring-computer-programming-ii?authuser=0)
+
+本 Repo 是我所負責題目的評測程式、測資、答案存放區。
+如果有要看當次作業的評分標準等資訊可以前往 [我的 Blog](https://blog.subarya.me/) 查看。
+
 ## HW01
 
 * [題目連結](https://drive.google.com/file/d/1GtQG4ZFi-GkuAun4insExypWhXxStdR9/view)
