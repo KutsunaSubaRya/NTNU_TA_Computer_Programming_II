@@ -18,6 +18,7 @@
 ## HW02
 
 * [題目連結](https://drive.google.com/file/d/1dDL0CW_nSeGBl32YkNlW6scxllj2rXta/view)
+* [講解此次作業的 Blog 連結](https://blog.subarya.me/2023/04/25/%5B2023%20NTNU%20%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88%E4%BA%8C%5D%20%E5%8A%A9%E6%95%99%E6%89%B9%E6%94%B9%E8%A7%A3%E9%87%8B%20-%20%E4%BD%9C%E6%A5%AD%E4%BA%8C/)
 
 ## hw0205
 
